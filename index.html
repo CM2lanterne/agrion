@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Les Insectes</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      background-color: #ffff99; /* Fond jaune clair */
+      font-family: "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.6;
+      color: black;
+    }
+
+    h1 {
+      text-align: center;
+      color: #003399; /* Bleu foncé */
+      font-weight: bold;
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+
+    ul {
+      margin-top: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    /* Animation simple au chargement */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="fade-in">LES INSECTES</h1>
+
+  <div class="fade-in">
+    <p>En raison de la très grande diversité de leurs habitats, de leurs régimes alimentaires et de leur mode de collecte de la nourriture (souvent différents chez les larves et les adultes d’une même espèce), les insectes jouent des rôles très variés au sein des écosystèmes.</p>
+
+    <ul>
+      <li>Les butineurs, consommateurs de nectar et de pollen, permettent la fécondation des plantes à fleurs.</li>
+      <li>Les consommateurs de matières mortes et de déchets animaux ou végétaux contribuent au recyclage de la matière organique. Ils ont un rôle important dans la purification et la fertilisation naturelle des sols.</li>
+      <li>L’ensemble des insectes forme une très grande part de la biomasse animale. Ils constituent une source de nourriture indispensable pour un grand nombre de vertébrés.</li>
+    </ul>
+  </div>
+
+  <script>
+    // Effet de fade-in au chargement
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".fade-in").forEach((el, i) => {
+        el.style.animationDelay = `${i * 0.3}s`;
+      });
+    });
+  </script>
+</body>
+</html>
