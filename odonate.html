@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Les Odonates</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      background-color: #ffff99; /* Fond jaune clair */
+      font-family: "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.6;
+      color: black;
+    }
+
+    h1 {
+      text-align: center;
+      color: #003399; /* Bleu foncé */
+      font-weight: bold;
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #003399;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+
+    /* Animation fade-in */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="fade-in">LES ODONATES</h1>
+
+  <div class="fade-in">
+    <p>Les odonates, plus connus sous le nom de libellules ou de demoiselles, sont des insectes carnivores à très grands yeux composés. Ils sont capables de voler dans toutes les directions et de planer.</p>
+
+    <h2>L’agrion</h2>
+    <p>C’est une demoiselle au corps très fin, bleu clair. Son abdomen est long et fin. Il chasse en vol et certaines espèces sont même cannibales.</p>
+
+    <h2>Habitat</h2>
+    <p>Les odonates ont besoin de milieux humides (mares, ruisseaux, rivières, étangs, tourbières…) pour vivre et se reproduire. C’est là que la femelle pond ses œufs.</p>
+  </div>
+
+  <script>
+    // Effet fade-in au chargement
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".fade-in").forEach((el, i) => {
+        el.style.animationDelay = `${i * 0.3}s`;
+      });
+    });
+  </script>
+</body>
+</html>
